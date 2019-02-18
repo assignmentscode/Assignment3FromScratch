@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render a header 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="first-row"
+  >
+    <div
+      className="header-line"
+    />
+    <h1>
+      BS
+    </h1>
+    <div
+      className="header-line"
+    />
+  </div>
+  <h2>
+    The Book Shelf
+  </h2>
+</div>
+`;
