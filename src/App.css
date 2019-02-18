@@ -5,3 +5,13 @@ html, body {
 body {
     background-color: #4a4b4c;
 }
+.content-width {
+    max-width: 80%;
+    margin: auto 0;
+}
+.book-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
