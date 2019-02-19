@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './GroupOfBooks.css';
 import BookCard from '../BookCard/BookCard';
 
-const GroupOfBooks = () => (
-  <div className="content-width">
-    <div className="author-name">
-      <span>J K Rowling</span>
-    </div>
-    <div className="same-author">
-      <div className="book-cards">
-        <BookCard Name="Harry" rating="4.2" likedData />
-        <BookCard Name="Harry" rating="4.2" likedData />
-        <BookCard Name="Harry" rating="4.2" likedData />
-        <BookCard Name="Harry" rating="4.2" likedData />
+class GroupOfBooks extends Component {
+  render() {
+    const multipleBookCards = this.props.listOfBooks.map(book => (<BookCard Name={book.Name} rating={book.rating} likedData key={book.id} />));
+    return (
+      <div className="content-width same-author-div">
+        <div className="author-name">
+          <span>{this.props.author}</span>
+        </div>
+        <div className="same-author">
+          <div className="book-cards">
+            {multipleBookCards}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
+GroupOfBooks.propTypes = {
+  author: PropTypes.string.isRequired,
+  listOfBooks: PropTypes.array.isRequired,
+};
 export default GroupOfBooks;

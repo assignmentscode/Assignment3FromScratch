@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button should render a div containing books of same author 1`] = `
+exports[`Group Of Books should render a div containing books of same author 1`] = `
 <div
-  className="content-width"
+  className="content-width same-author-div"
 >
   <div
     className="author-name"
   >
     <span>
-      J K Rowling
+      J K ROWLING
     </span>
   </div>
   <div
@@ -28,13 +28,13 @@ exports[`Button should render a div containing books of same author 1`] = `
         <p
           className="post-heading"
         >
-          Harry
+          If Tomorrow Comes (Tracy Whitney Series, #1)
         </p>
         <div>
           <span
             className="ratings "
           >
-            4.2
+            4.02
           </span>
           <img
             alt="Heart"
@@ -60,77 +60,13 @@ exports[`Button should render a div containing books of same author 1`] = `
         <p
           className="post-heading"
         >
-          Harry
+          Harry Potter and the Deathly Hallows (Harry Potter, #7)
         </p>
         <div>
           <span
             className="ratings "
           >
-            4.2
-          </span>
-          <img
-            alt="Heart"
-            className="heart-logo"
-            src={
-              Object {
-                "ReactComponent": [Function],
-                "__esModule": true,
-                "default": "heart-red.svg",
-              }
-            }
-          />
-        </div>
-      </div>
-      <div
-        className="card"
-      >
-        <img
-          alt="Book"
-          className="blog-image"
-          src="cover_image.jpeg"
-        />
-        <p
-          className="post-heading"
-        >
-          Harry
-        </p>
-        <div>
-          <span
-            className="ratings "
-          >
-            4.2
-          </span>
-          <img
-            alt="Heart"
-            className="heart-logo"
-            src={
-              Object {
-                "ReactComponent": [Function],
-                "__esModule": true,
-                "default": "heart-red.svg",
-              }
-            }
-          />
-        </div>
-      </div>
-      <div
-        className="card"
-      >
-        <img
-          alt="Book"
-          className="blog-image"
-          src="cover_image.jpeg"
-        />
-        <p
-          className="post-heading"
-        >
-          Harry
-        </p>
-        <div>
-          <span
-            className="ratings "
-          >
-            4.2
+            4.62
           </span>
           <img
             alt="Heart"

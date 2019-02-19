@@ -5,15 +5,14 @@
     justify-self: center;
 }
 .content-width {
-    max-width: 80%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 .book-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: auto;
+    justify-content: space-between;
 }
 div span {
     background-color: white;
@@ -27,4 +26,11 @@ div span {
     display: flex;
     margin-bottom: -1.5%;
     justify-content: center;
+}
+.same-author-div {
+    margin-bottom: 5%;
+}
+.outer-book-card {
+    display: flex;
+    justify-content: space-between;
 }
