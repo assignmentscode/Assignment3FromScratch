@@ -7,42 +7,57 @@ body, html {
 .card {
     /* max-width: 280px; */
     display: flex;
-    flex-basis: 300px;
-    flex-shrink: 1;
-    width: fit-content;
+    flex: 0 1 300px;
+    flex-direction: column;
     align-self: flex-start;
+    justify-content: space-between;
+    width: fit-content;
     text-align: center;
     font-family: arial;
     margin: 2%;
-    background-color: white;
-    flex-direction: column;
-    height: 331px;
+    background-color: orange;
+    min-height: 331px;
 }
-  .blog-image {
+.card:nth-child(even){
+    background-color: white;
+    color: orange;
+}
+.blog-image {
     max-width : 300px;
     max-height: 220px;
 }
 .post-heading {
     font-size: 20px;
     font-weight: 500;
-    color: black;
+    color: rgb(87, 84, 84);
     padding-left: 8px;
     padding-right: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     text-align: center;
 }
-.heart-logo {
-    float: right;
-    padding: 3px 10px 10px 5px;
-    width: 8%;
+.post-heading:nth-child(even) {
+    color: inherit;
 }
-.ratings {
-    float:left;
+.heart-logo {
+    margin-right: 0px;
+    padding: 3px 3px 1px 5px;
+    height: 1.7rem;
+    align-self: flex-end;
+}
+.ratings span {
     padding-left: 1rem;
-    color: gray;
+    /* color: rgb(56, 55, 55); */
+    color: inherit;
     font-weight: 700;
-    font-size: 1.5em;
+    background-color: inherit;
+}
+.rating {
+    justify-content: center;
 }
 .card-footer {
-    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
 }

@@ -10,8 +10,12 @@ const BookCard = props => (
     <img src={imagePath} alt="Book" className="blog-image" />
     <p className="post-heading">{props.Name}</p>
     <div className="card-footer">
-      <span className="ratings ">{props.rating}</span>
-      <img src={(props.likedData === true) ? redHeart : blackHeart} alt="Heart" className="heart-logo" />
+      <div className="ratings ">
+        <span>{props.rating.toPrecision(2)}</span>
+      </div>
+      <div>
+        <img src={(props.likedData === true) ? redHeart : blackHeart} alt="Heart" className="heart-logo" />
+      </div>
     </div>
   </div>
 );

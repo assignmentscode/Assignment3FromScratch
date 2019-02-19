@@ -6,7 +6,10 @@ import BookCard from '../BookCard/BookCard';
 class GroupOfBooks extends Component {
   render() {
     const { listOfBooks, author } = this.props;
-    const multipleBookCards = listOfBooks.map(book => (<BookCard Name={book.Name} rating={book.rating} likedData key={book.id} />));
+    const multipleBookCards = listOfBooks.map((book, index) => {
+      const likestatus = (index % 2 === 1);
+      return (<BookCard Name={book.Name} rating={book.rating} likedData={likestatus} key={book.id} />);
+    });
     return (
       <div className="content-width same-author-div">
         <div className="author-name">
