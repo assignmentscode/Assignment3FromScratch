@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import BookCard from './components/BookCard/BookCard';
+import GroupOfBooks from './components/GroupOfBooks/GroupOfBooks';
 
 class App extends Component {
   componentDidMount() {
@@ -12,11 +12,12 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <div className="book-cards content-width">
+        {/* <div className="book-cards content-width">
           <BookCard Name="Harry" rating="4.2" likedData />
           <BookCard Name="Harry" rating="4.2" likedData />
           <BookCard Name="Harry" rating="4.2" likedData />
-        </div>
+        </div> */}
+        <GroupOfBooks />
       </div>
     );
   }

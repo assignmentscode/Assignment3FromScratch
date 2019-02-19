@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render a div containing books of same author 1`] = `
+<div
+  className="content-width"
+>
+  <div
+    className="author-name"
+  >
+    <span>
+      J K Rowling
+    </span>
+  </div>
+  <div
+    className="same-author"
+  >
+    <div
+      className="book-cards"
+    >
+      <div
+        className="card"
+      >
+        <img
+          alt="Book"
+          className="blog-image"
+          src="cover_image.jpeg"
+        />
+        <p
+          className="post-heading"
+        >
+          Harry
+        </p>
+        <div>
+          <span
+            className="ratings "
+          >
+            4.2
+          </span>
+          <img
+            alt="Heart"
+            className="heart-logo"
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-red.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Book"
+          className="blog-image"
+          src="cover_image.jpeg"
+        />
+        <p
+          className="post-heading"
+        >
+          Harry
+        </p>
+        <div>
+          <span
+            className="ratings "
+          >
+            4.2
+          </span>
+          <img
+            alt="Heart"
+            className="heart-logo"
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-red.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Book"
+          className="blog-image"
+          src="cover_image.jpeg"
+        />
+        <p
+          className="post-heading"
+        >
+          Harry
+        </p>
+        <div>
+          <span
+            className="ratings "
+          >
+            4.2
+          </span>
+          <img
+            alt="Heart"
+            className="heart-logo"
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-red.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="card"
+      >
+        <img
+          alt="Book"
+          className="blog-image"
+          src="cover_image.jpeg"
+        />
+        <p
+          className="post-heading"
+        >
+          Harry
+        </p>
+        <div>
+          <span
+            className="ratings "
+          >
+            4.2
+          </span>
+          <img
+            alt="Heart"
+            className="heart-logo"
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "heart-red.svg",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
