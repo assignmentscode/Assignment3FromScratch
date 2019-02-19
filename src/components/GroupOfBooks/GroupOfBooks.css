@@ -12,8 +12,11 @@
 .book-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
+    align-content: space-around;
+    justify-content: flex-start;
+    padding: 4%;
+}   
+
 div span {
     background-color: white;
     color: orange;

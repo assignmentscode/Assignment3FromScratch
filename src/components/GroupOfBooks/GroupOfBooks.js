@@ -5,11 +5,12 @@ import BookCard from '../BookCard/BookCard';
 
 class GroupOfBooks extends Component {
   render() {
-    const multipleBookCards = this.props.listOfBooks.map(book => (<BookCard Name={book.Name} rating={book.rating} likedData key={book.id} />));
+    const { listOfBooks, author } = this.props;
+    const multipleBookCards = listOfBooks.map(book => (<BookCard Name={book.Name} rating={book.rating} likedData key={book.id} />));
     return (
       <div className="content-width same-author-div">
         <div className="author-name">
-          <span>{this.props.author}</span>
+          <span>{author}</span>
         </div>
         <div className="same-author">
           <div className="book-cards">

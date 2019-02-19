@@ -6,22 +6,21 @@ body, html {
   }
 .card {
     /* max-width: 280px; */
+    display: flex;
     flex-basis: 300px;
+    flex-shrink: 1;
     width: fit-content;
     align-self: flex-start;
     text-align: center;
     font-family: arial;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 2%;
     background-color: white;
-    display: flex;
     flex-direction: column;
+    height: 331px;
 }
   .blog-image {
-    width : 300px;
-    height: 220px;
+    max-width : 300px;
+    max-height: 220px;
 }
 .post-heading {
     font-size: 20px;
@@ -39,8 +38,11 @@ body, html {
 }
 .ratings {
     float:left;
-    padding-left: 5%;
+    padding-left: 1rem;
     color: gray;
     font-weight: 700;
     font-size: 1.5em;
+}
+.card-footer {
+    background-color: inherit;
 }
