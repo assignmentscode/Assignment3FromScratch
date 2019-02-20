@@ -1,7 +1,7 @@
 import React from 'react';
 import './BookCard.css';
 
-const blackHeart = require('./../../Assets/heart-black.svg');
+const whiteHeart = require('./../../Assets/heart-black.svg');
 const redHeart = require('./../../Assets/heart-red.svg');
 const imagePath = require('./../../Assets/cover_image.jpeg');
 
@@ -14,7 +14,7 @@ const BookCard = props => (
         <span>{props.rating.toPrecision(2)}</span>
       </div>
       <div>
-        <img src={(props.likedData === true) ? redHeart : blackHeart} alt="Heart" className="heart-logo" />
+        <img src={(props.likedData === true) ? redHeart : whiteHeart} alt="Heart" className="heart-logo" />
       </div>
     </div>
   </div>

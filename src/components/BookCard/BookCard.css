@@ -44,6 +44,9 @@ body, html {
     height: 1.7rem;
     align-self: flex-end;
 }
+.heart-logo:nth-child(odd) {
+    background-color: inherit;
+}
 .ratings span {
     padding-left: 1rem;
     /* color: rgb(56, 55, 55); */
