@@ -8,7 +8,7 @@ class GroupOfBooks extends Component {
     const { listOfBooks, author } = this.props;
     const multipleBookCards = listOfBooks.map((book, index) => {
       const likestatus = (index % 2 === 1);
-      return (<BookCard Name={book.Name} rating={book.rating} likedData={likestatus} key={book.id} />);
+      return (<BookCard Name={book.Name} rating={book.rating} bookId={book.id} likedData={likestatus} key={book.id} />);
     });
     return (
       <div className="content-width same-author-div">
