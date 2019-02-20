@@ -5,10 +5,10 @@ import BookCard from '../BookCard/BookCard';
 
 class GroupOfBooks extends Component {
   render() {
-    const { listOfBooks, author } = this.props;
+    const { listOfBooks, author, refreshValue } = this.props;
     const multipleBookCards = listOfBooks.map((book, index) => {
       const likestatus = (index % 2 === 1);
-      return (<BookCard Name={book.Name} rating={book.rating} bookId={book.id} likedData={likestatus} key={book.id} />);
+      return (<BookCard Name={book.Name} rating={book.rating} bookId={book.id} likedData={likestatus} key={book.id + refreshValue} />);
     });
     return (
       <div className="content-width same-author-div">
@@ -27,5 +27,6 @@ class GroupOfBooks extends Component {
 GroupOfBooks.propTypes = {
   author: PropTypes.string.isRequired,
   listOfBooks: PropTypes.array.isRequired,
+  refreshValue: PropTypes.isRequired,
 };
 export default GroupOfBooks;

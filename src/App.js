@@ -8,6 +8,7 @@ class App extends Component {
   state = {
     bookData: {},
     writers: [],
+    refresh: true,
   }
 
   componentDidMount() {
@@ -21,11 +22,19 @@ class App extends Component {
 
   extractWriters = bookData => this.setState({ writers: Object.keys(bookData) });
 
+  refreshPage = () => {
+    const { refresh } = this.state;
+    this.setState({ refresh: !refresh });
+  };
+
   render() {
-    const booksOfSameAuthor = this.state.writers.map(writer => (<GroupOfBooks author={writer} key={writer} listOfBooks={this.state.bookData[writer]} />));
+    const booksOfSameAuthor = this.state.writers.map((writer) => {
+      const { refresh } = this.state;
+      return (<GroupOfBooks author={writer} refreshValue={refresh} key={writer} listOfBooks={this.state.bookData[writer]} />);
+    });
     return (
       <div>
-        <Header />
+        <Header onClickFunction={this.refreshPage} />
         {booksOfSameAuthor}
       </div>
     );
